@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: about_github_wescleylima
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    ports:
+      - "8070:80"
+    restart: always
